@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import 'react-perfect-scrollbar/dist/css/styles.css';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default createGlobalStyle`
@@ -16,9 +17,11 @@ export default createGlobalStyle`
   }
   html, body, #root{
     height:100%;
+    position: relative;
   }
   body {
     -webkit-font-smoothing: antialiased;
+    
   }
   body, input, button {
     font: 14px 'Roboto', sans-serif;
